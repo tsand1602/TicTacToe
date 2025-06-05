@@ -1,5 +1,3 @@
-`include "TicTacToe.v"
-
 `define PRINTCELL(index) \
     if (valid[index] == 0) $write ("_ ");                               \
     else if (valid[index] == 1 && symbol[index] == 1) $write ("X ");    \
