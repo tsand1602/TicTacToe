@@ -2,8 +2,6 @@
 
 This project implements the game logic of Tic Tac Toe in Verilog, featuring a modular hardware design and an automated testbench. The system tracks player moves, determines the game state (ongoing, win, draw), and outputs the current board for simulation.
 
----
-
 ## Overview
 
 - **Core Modules**
@@ -13,15 +11,11 @@ This project implements the game logic of Tic Tac Toe in Verilog, featuring a mo
 - **Testbench**
   - `TicTacToe_tb.v`: Simulates gameplay, applies moves, and verifies outcomes with assertions and visual board output.
 
----
-
 ## File Structure
 
 - `TicTacToe.v`: Main Verilog source file containing the core logic modules (`TCell`, `TBox`, `row_col_decoder`).
 - `TicTacToe_tb.v`: Testbench for simulating and verifying the Tic Tac Toe design.
 - `README.md`: (This file) Project overview and usage instructions.
-
----
 
 ## How It Works
 
@@ -44,8 +38,6 @@ This project implements the game logic of Tic Tac Toe in Verilog, featuring a mo
   - Board resets
 - The current board is printed after each move for easy visualization.
 - Assertions are included to catch incorrect states.
-
----
 
 ## How to Run
 
@@ -70,8 +62,6 @@ This project implements the game logic of Tic Tac Toe in Verilog, featuring a mo
 
 4. **View Output:**
    - The simulation will print the board state after each move and report pass/failure for each test scenario.
-
----
 
 ## How to Change the Game Inputs (Customize Moves)
 
@@ -106,8 +96,6 @@ To reset the board between games, use the macro:
 `RESETBOARD
 ```
 
----
-
 ## Module Descriptions
 
 ### TCell
@@ -131,14 +119,10 @@ To reset the board between games, use the macro:
 - `PRINTCELL` / `PRINTBOARD`: Helper macros for board visualization.
 - `PLAYMOVE`, `RESETBOARD`: Automate moves and resets in the testbench.
 
----
-
 ## Customization
 
 - You can modify the test scenarios in `TicTacToe_tb.v` to test additional gameplay paths or edge cases.
 - The design is modular and can be expanded for larger boards or additional features.
-
----
 
 **Summary:**  
 To play or test different games, simply edit the move macros (`PLAYMOVE`) in the `TicTacToe_tb.v` file. All game input is provided there for simulation.
